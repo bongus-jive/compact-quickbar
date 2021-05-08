@@ -1,0 +1,35 @@
+[
+	[
+		{
+			"op": "test",
+			"path": "/replaced",
+			"value": true
+		},
+		
+		{
+			"op": "add",
+			"path": "/compacted",
+			"value": true
+		},
+		
+		{
+			"op": "add",
+			"path": "/gui/scroll/children/list/columns",
+			"value": 6
+		},
+		{
+			"op": "replace",
+			"path": "/gui/scroll/children/list/schema/memberSize/0",
+			"value": 20
+		},
+		{
+			"op": "remove",
+			"path": "/gui/scroll/children/list/schema/listTemplate/label"
+		},
+		{
+			"op": "replace",
+			"path": "/gui/scroll/children/list/schema/listTemplate/buttonContainer/position/0",
+			"value": 2
+		}
+	]
+]
