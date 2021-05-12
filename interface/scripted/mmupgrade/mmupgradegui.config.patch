@@ -30,6 +30,31 @@
 			"op": "replace",
 			"path": "/gui/scroll/children/list/schema/listTemplate/buttonContainer/position/0",
 			"value": 2
+		},
+		
+		{
+			"op": "add",
+			"path": "/tooltipLayout",
+			"value": {
+				"background": {
+					"type": "background",
+					"fileHeader": "",
+					"fileBody": "/interface/rightBarTooltipBg.png",
+					"fileFooter": ""
+				},
+				"description": {
+					"type": "label",
+					"position": [30, 7],
+					"hAnchor": "mid",
+					"vAnchor": "mid",
+					"fontSize": 8
+				}
+			}
+		},
+		{
+			"op": "replace",
+			"path": "/scripts/0",
+			"value" : "/sys/stardust/quickbar/quickbar_compact.lua"
 		}
 	]
 ]
