@@ -130,12 +130,12 @@ local function buildList()
     local btn = bc .. "." .. widget.addListItem(bc) .. ".button"
     widget.setButtonOverlayImage(btn, i.icon or "/items/currency/essence.png")
     
-		labels[btn] = i.label
+		compactLabels[btn] = i.label
   end
 end
 
 function createTooltip(screenPosition)
-  for widgetName, label in pairs(labels) do
+  for widgetName, label in pairs(compactLabels) do
     if widget.inMember(widgetName, screenPosition) then
       local tooltip = config.getParameter("tooltipLayout")
       tooltip.description.value = label
@@ -145,7 +145,7 @@ function createTooltip(screenPosition)
 end
 
 function init()
-	labels = {}
+	compactLabels = {}
 	
   buildList()
 end

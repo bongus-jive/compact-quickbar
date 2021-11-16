@@ -31,6 +31,11 @@
 			"path": "/gui/scroll/children/list/schema/listTemplate/buttonContainer/position/0",
 			"value": 2
 		},
+		{
+			"op": "replace",
+			"path": "/gui/scroll/rect/3",
+			"value": 201
+		},
 		
 		{
 			"op": "add",
@@ -39,12 +44,12 @@
 				"background": {
 					"type": "background",
 					"fileHeader": "",
-					"fileBody": "/interface/rightBarTooltipBg.png",
+					"fileBody": "/interface/rightBarTooltipBg.png?replace;ffffffa8=0000?scalenearest=2;1?border=1;ffffffa8",
 					"fileFooter": ""
 				},
 				"description": {
 					"type": "label",
-					"position": [30, 7],
+					"position": [60, 7],
 					"hAnchor": "mid",
 					"vAnchor": "mid",
 					"fontSize": 8
