@@ -42,6 +42,11 @@
 			"path": "/scripts/0",
 			"value" : "/sys/stardust/quickbar/quickbar_compact.lua"
 		},
+		{
+			"op": "add",
+			"path": "/scripts/-",
+			"value" : "/sys/stardust/quickbar/compacttooltip.lua"
+		},
     
     {
       "op": "add",
