@@ -36,30 +36,39 @@
 			"path": "/gui/scroll/rect/3",
 			"value": 201
 		},
-		
-		{
-			"op": "add",
-			"path": "/tooltipLayout",
-			"value": {
-				"background": {
-					"type": "background",
-					"fileHeader": "",
-					"fileBody": "/interface/rightBarTooltipBg.png?replace;ffffffa8=0000?scalenearest=2;1?border=1;ffffffa8",
-					"fileFooter": ""
-				},
-				"description": {
-					"type": "label",
-					"position": [60, 7],
-					"hAnchor": "mid",
-					"vAnchor": "mid",
-					"fontSize": 8
-				}
-			}
-		},
+    
 		{
 			"op": "replace",
 			"path": "/scripts/0",
 			"value" : "/sys/stardust/quickbar/quickbar_compact.lua"
-		}
+		},
+    
+    {
+      "op": "add",
+      "path": "/tooltipLayout",
+      "value": {
+        "bg" : {
+          "type" : "background",
+          "fileBody" : "/sys/stardust/quickbar/compacttooltipbg.png"
+        },
+        "background" : {
+          "type" : "imageStretch",
+          "position" : [0, 0],
+          "size" : [10, 16],
+          "direction" : "horizontal",
+          "stretchSet" : {
+            "begin" : "/sys/stardust/quickbar/compacttooltipside.png",
+            "inner" : "/sys/stardust/quickbar/compacttooltipmiddle.png",
+            "end" : "/sys/stardust/quickbar/compacttooltipside.png?flipx"
+          }
+        },
+        "text" : {
+          "type" : "label",
+          "position" : [4, 4],
+          "hAnchor" : "mid",
+          "vAnchor" : "bottom"
+        }
+      }
+    }
 	]
 ]
