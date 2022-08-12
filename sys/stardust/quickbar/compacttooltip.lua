@@ -2,7 +2,6 @@ function createTooltip(screenPosition)
   for widgetName, label in pairs(compactLabels) do
     if widget.inMember(widgetName, screenPosition) then
       local tooltip = config.getParameter("tooltipLayout")
-      sb.logInfo(sb.printJson(tooltip))
       
       tooltip.text.value = label
       if not tooltip.text.value or #tooltip.text.value == 0 then return end
