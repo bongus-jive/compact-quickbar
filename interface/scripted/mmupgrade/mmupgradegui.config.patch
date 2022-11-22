@@ -46,34 +46,6 @@
 			"op": "add",
 			"path": "/scripts/-",
 			"value" : "/sys/stardust/quickbar/compacttooltip.lua"
-		},
-    
-    {
-      "op": "add",
-      "path": "/tooltipLayout",
-      "value": {
-        "bg" : {
-          "type" : "background",
-          "fileBody" : "/sys/stardust/quickbar/compacttooltipbg.png"
-        },
-        "background" : {
-          "type" : "imageStretch",
-          "position" : [0, 0],
-          "size" : [10, 16],
-          "direction" : "horizontal",
-          "stretchSet" : {
-            "begin" : "/sys/stardust/quickbar/compacttooltipside.png",
-            "inner" : "/sys/stardust/quickbar/compacttooltipmiddle.png",
-            "end" : "/sys/stardust/quickbar/compacttooltipside.png?flipx"
-          }
-        },
-        "text" : {
-          "type" : "label",
-          "position" : [4, 4],
-          "hAnchor" : "mid",
-          "vAnchor" : "bottom"
-        }
-      }
-    }
+		}
 	]
 ]
